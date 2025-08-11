@@ -44,10 +44,6 @@ function AboutPage() {
           won't bore you with the details, but my passion for coding led me down
           a long path of challenges and success stories to get where I am today.
         </Typography>
-        <Typography level="body-lg" sx={{ maxWidth: "600px" }}>
-          I'm currently working on some projects to beefen up my portfolio, as
-          well as applying to internships for next summer.
-        </Typography>
       </Box>
     </Sheet>
   );
