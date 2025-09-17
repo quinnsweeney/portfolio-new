@@ -31,15 +31,16 @@ function AboutPage() {
           Hi, I'm Quinn! I grew up in Denver, Colorado and am currently an
           undergraduate student at the University of Alabama majoring in MIS
           with a minor in Computer Science. I love to ski, watch sports, and
-          read - Brandon Sanderson is my favorite!
+          read - Brandon Sanderson and Matt Dinniman are my favorites!
         </Typography>
         <Typography level="body-lg" sx={{ maxWidth: "600px" }}>
           I've been fascinated with computers for my entire life, and it lead me
           to teach myself how to code at a relatively young age. From there I
           got an apprenticeship doing web development at Pinnacol Assurance -
-          the largest workers compensation insurance company in Colorado. I
-          won't bore you with the details, but my passion for coding led me down
-          a long path of challenges and success stories to get where I am today.
+          the largest workers compensation insurance company in Colorado. I'm
+          currently working on a full-stack web app to assist in ski resort
+          navigation. I love building things that are useful and fun, and I hope
+          to make a positive impact on the world through technology.
         </Typography>
       </Box>
     </Sheet>
