@@ -71,24 +71,41 @@ function ProjectPage() {
           pt: 3,
         }}
       >
-        <Button
-          component="a"
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="solid"
-        >
-          View Live Site
-        </Button>
-        <Button
-          component="a"
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="outlined"
-        >
-          View Source Code
-        </Button>
+        {project.liveUrl && (
+          <Button
+            component="a"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="solid"
+          >
+            View Live Site
+          </Button>
+        )}
+        {Array.isArray(project.repoUrl) ? (
+          project.repoUrl.map((repo) => (
+            <Button
+              key={Object.keys(repo)[0]}
+              component="a"
+              href={Object.values(repo)[0]}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outlined"
+            >
+              View {Object.keys(repo)[0]} Source Code
+            </Button>
+          ))
+        ) : (
+          <Button
+            component="a"
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+          >
+            View Source Code
+          </Button>
+        )}
       </Box>
     </Sheet>
   );

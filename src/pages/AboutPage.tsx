@@ -23,10 +23,7 @@ function AboutPage() {
           textAlign: "center",
         }}
       >
-        <Avatar
-          src="https://media.licdn.com/dms/image/v2/D4D03AQFU_MMxisyXOg/profile-displayphoto-shrink_800_800/B4DZdAreY_GYAc-/0/1749136828673?e=1757548800&v=beta&t=_QYt-tSIC2iGzCvAr0VGyD5AGZsQ6FaeUZm1erRCLBs" // Replace with your photo
-          sx={{ "--Avatar-size": "150px" }}
-        />
+        <Avatar src="headshot.jpeg" sx={{ "--Avatar-size": "150px" }} />
         <Typography level="h1" component="h1">
           About Me
         </Typography>

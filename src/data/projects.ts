@@ -10,6 +10,19 @@ export const projects = [
     repoUrl: "https://github.com/quinnsweeney/ski-nav-app/",
   },
   {
+    id: "project-5",
+    title: "Train Like a Champion",
+    shortDescription:
+      "An application to help connect gym goers with personal trainers.",
+    longDescription:
+      'Train Like a Champion is a full-stack application designed to connect gym enthusiasts with personal trainers. "The Uber of fitness".',
+    tags: ["React", "Node.js", "Dotnet", "MySQL"],
+    repoUrl: [
+      { Frontend: "https://github.com/qasweeney/FE-TLAC" },
+      { Backend: "https://github.com/qasweeney/API-TLAC" },
+    ],
+  },
+  {
     id: "project-2",
     title: "Read-Only Reddit Client",
     shortDescription: "A read-only client for browsing Reddit.",
