@@ -4,10 +4,12 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <Analytics />
       <Navbar />
       <Box component="main" sx={{ flexGrow: 1, p: { xs: 2, md: 3 } }}>
         <Routes>
