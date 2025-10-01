@@ -40,27 +40,52 @@ function ProjectPage() {
           Back
         </Button>
       </Box>
-      <Typography level="h1" component="h1" gutterBottom>
-        {project.title}
-      </Typography>
-
-      <Box sx={{ my: 3 }}>
-        <Typography level="h4" component="h2" gutterBottom>
-          Technologies Used
-        </Typography>
-        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-          {project.tags.map((tag) => (
-            <Chip key={tag} variant="solid" color="primary">
-              {tag}
-            </Chip>
-          ))}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" }, // Stack on mobile, side-by-side on desktop
+          gap: 3,
+          alignItems: "flex-start", // Align to top for better flow
+        }}
+      >
+        <Box sx={{ flex: 1 }}>
+          <Typography level="h1" component="h1" gutterBottom>
+            {project.title}
+          </Typography>
+          <Box sx={{ my: 3 }}>
+            <Typography level="h4" component="h2" gutterBottom>
+              Technologies Used
+            </Typography>
+            <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+              {project.tags.map((tag) => (
+                <Chip key={tag} variant="solid" color="primary">
+                  {tag}
+                </Chip>
+              ))}
+            </Box>
+          </Box>
+          <Typography level="body-lg" sx={{ my: 3, lineHeight: 1.7 }}>
+            {project.longDescription}
+          </Typography>
         </Box>
+        {project.videoUrl && (
+          <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
+            <video
+              src={project.videoUrl}
+              controls
+              style={{
+                width: "100%",
+                maxWidth: "400px", // Adjust as needed; remove if you want full flex width
+                maxHeight: "600px",
+                borderRadius: "8px",
+                objectFit: "contain",
+              }}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </Box>
+        )}
       </Box>
-
-      <Typography level="body-lg" sx={{ my: 3, lineHeight: 1.7 }}>
-        {project.longDescription}
-      </Typography>
-
       <Box
         sx={{
           display: "flex",

@@ -4,10 +4,28 @@ export const projects = [
     title: "SkiFinder",
     shortDescription: "A modern ski resort navigation app.",
     longDescription:
-      "SkiFinder is a full-featured ski resort navigation app built with React and Node.js. The backend is powered by Express and Supabase.",
-    tags: ["React", "Node.js", "Supabase", "MUI", "Express", "TypeScript"],
+      "SkiFinder is a ski resort navigation app built with React. The backend is powered by Express and Supabase. Mobile app and web app are available, with the mobile app still in development. The mobile app is built with Expo and React Native, and features a custom component library for a consistent look and feel across platforms. Features industry security standards, using supabase auth and SecureStorage for token storage.",
+    tags: [
+      "React & React Native",
+      "TypeScript",
+      "Supabase",
+      "Node.js",
+      "MUI",
+      "Express",
+      "PostgreSQL",
+      "Expo",
+      "Custom Component Library",
+    ],
     liveUrl: "https://skifinder.quinnsweeney.dev",
-    repoUrl: "https://github.com/quinnsweeney/ski-nav-app/",
+    repoUrl: [
+      {
+        "Web Apps & Backend": "https://github.com/quinnsweeney/ski-nav-app/",
+      },
+      {
+        "IOS App": "https://github.com/quinnsweeney/ski-finder-mobile",
+      },
+    ],
+    videoUrl: "/SkiFinder.mp4",
   },
   {
     id: "project-5",
