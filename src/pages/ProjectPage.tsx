@@ -107,6 +107,19 @@ function ProjectPage() {
             View Live Site
           </Button>
         )}
+        {Array.isArray(project.otherUrls) &&
+          project.otherUrls.map((other) => (
+            <Button
+              key={Object.keys(other)[0]}
+              component="a"
+              href={Object.values(other)[0]}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="solid"
+            >
+              Visit {Object.keys(other)[0]}
+            </Button>
+          ))}
         {Array.isArray(project.repoUrl) ? (
           project.repoUrl.map((repo) => (
             <Button

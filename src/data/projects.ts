@@ -28,6 +28,17 @@ export const projects = [
     videoUrl: "/SkiFinder.mp4",
   },
   {
+    id: "project-6",
+    title: "ACCESS Teacher Evaluation Portal",
+    shortDescription:
+      "A tool for evaluating teachers used across the state of Alabama.",
+    longDescription:
+      "The ACCESS Teacher Evaluation Portal is a web application designed to streamline the teacher evaluation process for schools across Alabama. This portal allows administrators to efficiently manage evaluations, track teacher performance, and generate reports.",
+    tags: ["ASP.NET Core", "Razor Pages", "MSSQL", "Bitbucket", ".NET 8"],
+    otherUrls: [{ "ACCESS Site": "https://accessdl.state.al.us/" }],
+    repoUrl: [],
+  },
+  {
     id: "project-5",
     title: "Train Like a Champion",
     shortDescription:
